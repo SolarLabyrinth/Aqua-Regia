@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dbkwlg7txdlwc"]
+
+[ext_resource type="Texture2D" uid="uid://b6hxy5mpk8p8j" path="res://essence/yellow.png" id="1_033w4"]
+
+[node name="YellowEssence" type="Sprite2D"]
+scale = Vector2(6, 6)
+texture = ExtResource("1_033w4")

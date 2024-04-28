@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://excw7ce5lcod"]
+
+[ext_resource type="Texture2D" uid="uid://bk8tsn3kk2ffw" path="res://essence/white.png" id="1_7juvk"]
+
+[node name="WhiteEssence" type="Sprite2D"]
+scale = Vector2(6, 6)
+texture = ExtResource("1_7juvk")

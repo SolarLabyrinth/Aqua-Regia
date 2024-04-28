@@ -1,0 +1,88 @@
+[gd_scene load_steps=9 format=3 uid="uid://dtaf1yvwuxw43"]
+
+[ext_resource type="Texture2D" uid="uid://dgutiepf4lei8" path="res://MainUI.png" id="1_2ty7a"]
+[ext_resource type="Script" path="res://game_ui.gd" id="1_fgjgn"]
+[ext_resource type="PackedScene" uid="uid://cr4e8es1tjtp8" path="res://essence/RedEssence.tscn" id="2_hfudp"]
+[ext_resource type="PackedScene" uid="uid://cvgb5pgyiswgv" path="res://essence/BlackEssence.tscn" id="3_mfevm"]
+[ext_resource type="PackedScene" uid="uid://djp2ueiqwib1j" path="res://essence/BrownEssence.tscn" id="4_rvs4v"]
+[ext_resource type="PackedScene" uid="uid://jxt0b1mdxuam" path="res://essence/GreenEssence.tscn" id="5_iwbqr"]
+[ext_resource type="PackedScene" uid="uid://excw7ce5lcod" path="res://essence/WhiteEssence.tscn" id="6_vipa8"]
+[ext_resource type="PackedScene" uid="uid://dbkwlg7txdlwc" path="res://essence/YellowEssence.tscn" id="7_id8s4"]
+
+[node name="GameUi" type="Node2D"]
+script = ExtResource("1_fgjgn")
+
+[node name="MainUi" type="Sprite2D" parent="."]
+position = Vector2(-12, 0)
+scale = Vector2(6, 6)
+texture = ExtResource("1_2ty7a")
+
+[node name="RedEssence" parent="." instance=ExtResource("2_hfudp")]
+position = Vector2(-219, 42)
+
+[node name="BlackEssence" parent="." instance=ExtResource("3_mfevm")]
+position = Vector2(-183, -24)
+
+[node name="BrownEssence" parent="." instance=ExtResource("4_rvs4v")]
+position = Vector2(-255, -24)
+
+[node name="GreenEssence" parent="." instance=ExtResource("5_iwbqr")]
+position = Vector2(-183, 24)
+
+[node name="WhiteEssence" parent="." instance=ExtResource("6_vipa8")]
+position = Vector2(-255, 24)
+
+[node name="YellowEssence" parent="." instance=ExtResource("7_id8s4")]
+position = Vector2(-219, -42)
+
+[node name="PurityMarker" type="ColorRect" parent="."]
+unique_name_in_owner = true
+offset_left = -6.0
+offset_top = -45.0
+offset_right = 6.0
+offset_bottom = -33.0
+
+[node name="Slot0" type="Node2D" parent="."]
+position = Vector2(-132, -45)
+
+[node name="Slot1" type="Node2D" parent="."]
+position = Vector2(-114, -45)
+
+[node name="Slot2" type="Node2D" parent="."]
+position = Vector2(-96, -45)
+
+[node name="Slot3" type="Node2D" parent="."]
+position = Vector2(-78, -45)
+
+[node name="Slot4" type="Node2D" parent="."]
+position = Vector2(-60, -45)
+
+[node name="Slot5" type="Node2D" parent="."]
+position = Vector2(-42, -45)
+
+[node name="Slot6" type="Node2D" parent="."]
+position = Vector2(-24, -45)
+
+[node name="Slot7" type="Node2D" parent="."]
+position = Vector2(-6, -45)
+
+[node name="Slot8" type="Node2D" parent="."]
+position = Vector2(12, -45)
+
+[node name="Slot9" type="Node2D" parent="."]
+position = Vector2(30, -45)
+
+[node name="Slot10" type="Node2D" parent="."]
+position = Vector2(48, -45)
+
+[node name="Slot11" type="Node2D" parent="."]
+position = Vector2(66, -45)
+
+[node name="Slot12" type="Node2D" parent="."]
+position = Vector2(84, -45)
+
+[node name="Slot13" type="Node2D" parent="."]
+position = Vector2(102, -45)
+
+[node name="Slot14" type="Node2D" parent="."]
+position = Vector2(120, -45)

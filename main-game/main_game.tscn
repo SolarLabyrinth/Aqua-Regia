@@ -1,0 +1,438 @@
+[gd_scene load_steps=34 format=3 uid="uid://co8bc7ky54ahg"]
+
+[ext_resource type="Script" path="res://main-game/main_game.gd" id="1_gdj4l"]
+[ext_resource type="PackedScene" uid="uid://cyyt5ivfh7et5" path="res://cauldron/Cauldron.tscn" id="2_ot2x7"]
+[ext_resource type="AudioStream" uid="uid://bgvd8hkkj01nr" path="res://drop_003.ogg" id="2_sp6m3"]
+[ext_resource type="AudioStream" uid="uid://byd028sfcrjke" path="res://German Virtue.ogg" id="2_t2ilm"]
+[ext_resource type="Texture2D" uid="uid://cgprbe0lpuhfq" path="res://backdrop2.png" id="3_faq8g"]
+[ext_resource type="AudioStream" uid="uid://cej67fi3xgust" path="res://click1.ogg" id="3_x3ajv"]
+[ext_resource type="AudioStream" uid="uid://c3ie7nlitafqg" path="res://glass_005.ogg" id="4_fhtmo"]
+[ext_resource type="Texture2D" uid="uid://4aqhbn0cccnp" path="res://essence/red.png" id="5_ib3g7"]
+[ext_resource type="Texture2D" uid="uid://c3jg3gy5v4lgo" path="res://ui-bars.png" id="7_pyv6j"]
+[ext_resource type="Texture2D" uid="uid://b0oyfdsy3qrik" path="res://options-button.png" id="8_uicpu"]
+[ext_resource type="Texture2D" uid="uid://cser5737eoxk" path="res://new-ui.png" id="9_4y00i"]
+[ext_resource type="Texture2D" uid="uid://brqbywidtus46" path="res://win.png" id="10_xlptd"]
+[ext_resource type="Texture2D" uid="uid://b8l71f5vi6xbv" path="res://in-game-menu.png" id="10_yfkot"]
+[ext_resource type="Texture2D" uid="uid://ckqu4l4cns64n" path="res://game-over.png" id="11_bexot"]
+[ext_resource type="Texture2D" uid="uid://btqfend3oxqj2" path="res://main-menu.png" id="11_tsrtd"]
+[ext_resource type="Texture2D" uid="uid://blckp58f5o842" path="res://overflow.png" id="14_fisns"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nggox"]
+size = Vector2(120, 126)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wy055"]
+atlas = ExtResource("7_pyv6j")
+region = Rect2(0, 0, 42, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kga8u"]
+atlas = ExtResource("7_pyv6j")
+region = Rect2(0, 4, 42, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nondh"]
+atlas = ExtResource("7_pyv6j")
+region = Rect2(0, 8, 42, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_30ygn"]
+atlas = ExtResource("7_pyv6j")
+region = Rect2(0, 12, 42, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_02vc4"]
+atlas = ExtResource("7_pyv6j")
+region = Rect2(0, 16, 42, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l41rx"]
+atlas = ExtResource("7_pyv6j")
+region = Rect2(0, 20, 42, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_metmk"]
+atlas = ExtResource("7_pyv6j")
+region = Rect2(0, 24, 42, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ax0fv"]
+atlas = ExtResource("7_pyv6j")
+region = Rect2(0, 28, 42, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tb1lh"]
+atlas = ExtResource("7_pyv6j")
+region = Rect2(0, 32, 42, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vawsl"]
+atlas = ExtResource("7_pyv6j")
+region = Rect2(0, 36, 42, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m15ll"]
+atlas = ExtResource("7_pyv6j")
+region = Rect2(0, 40, 42, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pp13s"]
+atlas = ExtResource("7_pyv6j")
+region = Rect2(0, 44, 42, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lfmd5"]
+atlas = ExtResource("7_pyv6j")
+region = Rect2(0, 48, 42, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ppp3c"]
+atlas = ExtResource("7_pyv6j")
+region = Rect2(0, 52, 42, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uxjxb"]
+atlas = ExtResource("7_pyv6j")
+region = Rect2(0, 56, 42, 4)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uf1v8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wy055")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kga8u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nondh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_30ygn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_02vc4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l41rx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_metmk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ax0fv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tb1lh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vawsl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m15ll")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pp13s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lfmd5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ppp3c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uxjxb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Main Game" type="Node2D"]
+script = ExtResource("1_gdj4l")
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("2_t2ilm")
+bus = &"Music"
+parameters/looping = true
+
+[node name="ClickPlayer" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("3_x3ajv")
+bus = &"SFX"
+
+[node name="GlassPlayer" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("4_fhtmo")
+bus = &"SFX"
+
+[node name="MainMenu" type="Node2D" parent="."]
+unique_name_in_owner = true
+
+[node name="Main-menu" type="Sprite2D" parent="MainMenu"]
+z_index = 10
+position = Vector2(320, 180)
+scale = Vector2(6, 6)
+texture = ExtResource("11_tsrtd")
+
+[node name="StartGameButton" type="TextureButton" parent="MainMenu"]
+offset_left = 218.0
+offset_top = 187.0
+offset_right = 424.0
+offset_bottom = 228.0
+
+[node name="ToggleMusicButton1" type="TextureButton" parent="MainMenu"]
+offset_left = 209.0
+offset_top = 234.0
+offset_right = 435.0
+offset_bottom = 276.0
+
+[node name="MusicUnchecedColor1" type="ColorRect" parent="MainMenu/ToggleMusicButton1"]
+unique_name_in_owner = true
+z_index = 20
+layout_mode = 0
+offset_left = 15.0
+offset_top = 12.0
+offset_right = 33.0
+offset_bottom = 30.0
+mouse_filter = 2
+color = Color(0.282353, 0.290196, 0.466667, 1)
+
+[node name="Game" type="Node2D" parent="."]
+unique_name_in_owner = true
+visible = false
+
+[node name="PlopPlayer" type="AudioStreamPlayer" parent="Game"]
+unique_name_in_owner = true
+stream = ExtResource("2_sp6m3")
+bus = &"SFX"
+
+[node name="Backdrop2" type="Sprite2D" parent="Game"]
+position = Vector2(320, 180)
+scale = Vector2(6, 6)
+texture = ExtResource("3_faq8g")
+
+[node name="Cauldron" parent="Game" instance=ExtResource("2_ot2x7")]
+position = Vector2(320, 264)
+
+[node name="ClickableArea" type="Area2D" parent="Game"]
+unique_name_in_owner = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Game/ClickableArea"]
+position = Vector2(320, 105)
+shape = SubResource("RectangleShape2D_nggox")
+
+[node name="OptionsButton" type="TextureButton" parent="Game"]
+offset_left = 548.0
+offset_top = 12.0
+offset_right = 638.0
+offset_bottom = 102.0
+texture_normal = ExtResource("8_uicpu")
+
+[node name="GameUI" type="Sprite2D" parent="Game"]
+position = Vector2(290, 87)
+scale = Vector2(6, 6)
+texture = ExtResource("9_4y00i")
+
+[node name="ProgressBar" type="AnimatedSprite2D" parent="Game/GameUI"]
+unique_name_in_owner = true
+position = Vector2(5, -10.5)
+sprite_frames = SubResource("SpriteFrames_uf1v8")
+frame = 7
+
+[node name="NextColorSprite" type="Sprite2D" parent="Game/GameUI"]
+unique_name_in_owner = true
+position = Vector2(34.5, -5)
+texture = ExtResource("5_ib3g7")
+
+[node name="GlassButton" type="TextureButton" parent="Game"]
+offset_left = 14.0
+offset_top = 204.0
+offset_right = 38.0
+offset_bottom = 240.0
+
+[node name="GlassButton2" type="TextureButton" parent="Game"]
+auto_translate_mode = 1
+offset_left = 68.0
+offset_top = 192.0
+offset_right = 98.0
+offset_bottom = 240.0
+
+[node name="GlassButton3" type="TextureButton" parent="Game"]
+auto_translate_mode = 1
+offset_left = 110.0
+offset_top = 198.0
+offset_right = 200.0
+offset_bottom = 234.0
+
+[node name="GlassButton4" type="TextureButton" parent="Game"]
+auto_translate_mode = 1
+offset_left = 440.0
+offset_top = 114.0
+offset_right = 464.0
+offset_bottom = 150.0
+
+[node name="GlassButton5" type="TextureButton" parent="Game"]
+auto_translate_mode = 1
+offset_left = 470.0
+offset_top = 108.0
+offset_right = 500.0
+offset_bottom = 150.0
+
+[node name="GlassButton6" type="TextureButton" parent="Game"]
+auto_translate_mode = 1
+offset_left = 548.0
+offset_top = 108.0
+offset_right = 584.0
+offset_bottom = 150.0
+
+[node name="GlassButton7" type="TextureButton" parent="Game"]
+auto_translate_mode = 1
+offset_left = 590.0
+offset_top = 102.0
+offset_right = 620.0
+offset_bottom = 150.0
+
+[node name="GlassButton8" type="TextureButton" parent="Game"]
+auto_translate_mode = 1
+offset_left = 524.0
+offset_top = 198.0
+offset_right = 560.0
+offset_bottom = 240.0
+
+[node name="GlassButton9" type="TextureButton" parent="Game"]
+auto_translate_mode = 1
+offset_left = 566.0
+offset_top = 186.0
+offset_right = 596.0
+offset_bottom = 240.0
+
+[node name="GlassButton10" type="TextureButton" parent="Game"]
+auto_translate_mode = 1
+offset_left = 458.0
+offset_top = 282.0
+offset_right = 488.0
+offset_bottom = 330.0
+
+[node name="GlassButton11" type="TextureButton" parent="Game"]
+auto_translate_mode = 1
+offset_left = 494.0
+offset_top = 294.0
+offset_right = 518.0
+offset_bottom = 330.0
+
+[node name="GlassButton12" type="TextureButton" parent="Game"]
+auto_translate_mode = 1
+offset_left = 524.0
+offset_top = 276.0
+offset_right = 554.0
+offset_bottom = 330.0
+
+[node name="GlassButton13" type="TextureButton" parent="Game"]
+auto_translate_mode = 1
+offset_left = 560.0
+offset_top = 288.0
+offset_right = 596.0
+offset_bottom = 330.0
+
+[node name="InGameMenu" type="Node2D" parent="."]
+unique_name_in_owner = true
+visible = false
+
+[node name="In-game-menu2" type="Sprite2D" parent="InGameMenu"]
+z_index = 10
+position = Vector2(320, 180)
+scale = Vector2(6, 6)
+texture = ExtResource("10_yfkot")
+
+[node name="ResumeButton" type="TextureButton" parent="InGameMenu"]
+offset_left = 217.0
+offset_top = 179.0
+offset_right = 429.0
+offset_bottom = 211.0
+
+[node name="RestartButton1" type="TextureButton" parent="InGameMenu"]
+auto_translate_mode = 1
+offset_left = 199.0
+offset_top = 221.0
+offset_right = 447.0
+offset_bottom = 253.0
+
+[node name="ToggleMusicButton2" type="TextureButton" parent="InGameMenu"]
+auto_translate_mode = 1
+offset_left = 217.0
+offset_top = 263.0
+offset_right = 429.0
+offset_bottom = 295.0
+
+[node name="MusicUnchecedColor2" type="ColorRect" parent="InGameMenu/ToggleMusicButton2"]
+unique_name_in_owner = true
+auto_translate_mode = 1
+z_index = 20
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 25.0
+offset_bottom = 25.0
+mouse_filter = 2
+color = Color(0.282353, 0.290196, 0.466667, 1)
+
+[node name="WinScreen" type="Node2D" parent="."]
+unique_name_in_owner = true
+visible = false
+
+[node name="Win" type="Sprite2D" parent="WinScreen"]
+z_index = 10
+position = Vector2(320, 180)
+scale = Vector2(6, 6)
+texture = ExtResource("10_xlptd")
+
+[node name="PlayAgainButton2" type="TextureButton" parent="WinScreen"]
+offset_left = -24.0
+offset_top = -15.0
+offset_right = 672.0
+offset_bottom = 376.0
+
+[node name="FailScreen" type="Node2D" parent="."]
+unique_name_in_owner = true
+visible = false
+
+[node name="Game-over" type="Sprite2D" parent="FailScreen"]
+z_index = 10
+position = Vector2(320, 180)
+scale = Vector2(6, 6)
+texture = ExtResource("11_bexot")
+
+[node name="PlayAgainButton3" type="TextureButton" parent="FailScreen"]
+auto_translate_mode = 1
+offset_left = -30.0
+offset_top = -16.0
+offset_right = 662.0
+offset_bottom = 375.0
+
+[node name="Overflow" type="Node2D" parent="."]
+unique_name_in_owner = true
+visible = false
+z_index = 10
+
+[node name="OverflowPng" type="Sprite2D" parent="Overflow"]
+z_index = 1
+position = Vector2(320, 180)
+scale = Vector2(6, 6)
+texture = ExtResource("14_fisns")
+
+[node name="PlayAgainButton4" type="TextureButton" parent="Overflow"]
+offset_left = -21.0
+offset_top = -17.0
+offset_right = 662.0
+offset_bottom = 377.0
+
+[connection signal="pressed" from="MainMenu/StartGameButton" to="." method="_on_game_start_pressed"]
+[connection signal="pressed" from="MainMenu/ToggleMusicButton1" to="." method="_on_sound_toggle"]
+[connection signal="input_event" from="Game/ClickableArea" to="." method="_on_clickable_area_input_event"]
+[connection signal="pressed" from="Game/OptionsButton" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="Game/GlassButton" to="." method="on_glass_pressed"]
+[connection signal="pressed" from="Game/GlassButton2" to="." method="on_glass_pressed"]
+[connection signal="pressed" from="Game/GlassButton3" to="." method="on_glass_pressed"]
+[connection signal="pressed" from="Game/GlassButton4" to="." method="on_glass_pressed"]
+[connection signal="pressed" from="Game/GlassButton5" to="." method="on_glass_pressed"]
+[connection signal="pressed" from="Game/GlassButton6" to="." method="on_glass_pressed"]
+[connection signal="pressed" from="Game/GlassButton7" to="." method="on_glass_pressed"]
+[connection signal="pressed" from="Game/GlassButton8" to="." method="on_glass_pressed"]
+[connection signal="pressed" from="Game/GlassButton9" to="." method="on_glass_pressed"]
+[connection signal="pressed" from="Game/GlassButton10" to="." method="on_glass_pressed"]
+[connection signal="pressed" from="Game/GlassButton11" to="." method="on_glass_pressed"]
+[connection signal="pressed" from="Game/GlassButton12" to="." method="on_glass_pressed"]
+[connection signal="pressed" from="Game/GlassButton13" to="." method="on_glass_pressed"]
+[connection signal="pressed" from="InGameMenu/ResumeButton" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="InGameMenu/RestartButton1" to="." method="_on_restart_game"]
+[connection signal="pressed" from="InGameMenu/ToggleMusicButton2" to="." method="_on_sound_toggle"]
+[connection signal="pressed" from="WinScreen/PlayAgainButton2" to="." method="_on_restart_game"]
+[connection signal="pressed" from="FailScreen/PlayAgainButton3" to="." method="_on_restart_game"]
+[connection signal="pressed" from="Overflow/PlayAgainButton4" to="." method="_on_restart_game"]

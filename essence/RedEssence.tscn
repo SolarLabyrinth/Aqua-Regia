@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cr4e8es1tjtp8"]
+
+[ext_resource type="Texture2D" uid="uid://4aqhbn0cccnp" path="res://essence/red.png" id="1_074u5"]
+
+[node name="RedEssence" type="Sprite2D"]
+scale = Vector2(6, 6)
+texture = ExtResource("1_074u5")

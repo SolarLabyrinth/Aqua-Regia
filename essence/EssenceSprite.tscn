@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqgl3dp1pjdob"]
+
+[ext_resource type="Script" path="res://essence/essence_sprite.gd" id="1_xbbw6"]
+[ext_resource type="Texture2D" uid="uid://4aqhbn0cccnp" path="res://essence/red.png" id="1_yqqgb"]
+
+[node name="EssenceSprite" type="Sprite2D"]
+scale = Vector2(6, 6)
+texture = ExtResource("1_yqqgb")
+script = ExtResource("1_xbbw6")

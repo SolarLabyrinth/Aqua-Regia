@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://jvfig13vdfpr"]
+
+[ext_resource type="Texture2D" uid="uid://1ctktig7eor6" path="res://essence-chart/pretty-chart.png" id="7_3sqyw"]
+
+[node name="EssenceChart" type="Node2D"]
+
+[node name="Pretty-chart" type="Sprite2D" parent="."]
+scale = Vector2(6, 6)
+texture = ExtResource("7_3sqyw")

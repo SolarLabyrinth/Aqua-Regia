@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://drwqq6abm317j"]
+
+[ext_resource type="Texture2D" uid="uid://bw0k1fr804qfq" path="res://purity-shards/impurity-shard.png" id="1_18opa"]
+[ext_resource type="Script" path="res://purity-shards/impurity_shard.gd" id="1_etouu"]
+[ext_resource type="Texture2D" uid="uid://dyxewboqtncwg" path="res://purity-shards/impurity.png" id="2_ufix2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_imv4m"]
+radius = 12.0
+
+[node name="RigidBody2D" type="RigidBody2D"]
+script = ExtResource("1_etouu")
+
+[node name="Impurity-shard" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("1_18opa")
+
+[node name="Impurity" type="Sprite2D" parent="."]
+scale = Vector2(6, 6)
+texture = ExtResource("2_ufix2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("CircleShape2D_imv4m")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-6, -12, 6, -12, 6, -6, 12, -6, 12, 6, 6, 6, 6, 12, -6, 12, -6, 6, -12, 6, -12, -6, -6, -6)
