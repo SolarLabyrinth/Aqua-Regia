@@ -59,7 +59,7 @@ func negative_collision(body):
 		Events.impurity.emit(midpoint)
 		collision(body)
 
-func _on_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
+func _on_body_shape_entered(_body_rid, body, _body_shape_index, _local_shape_index):
 	if "type" in body:
 		if type == 'aether':
 			if body.type == 'terra' or body.type == 'umbra':

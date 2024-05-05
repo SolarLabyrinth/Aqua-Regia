@@ -1,15 +1,34 @@
-[gd_scene load_steps=9 format=3 uid="uid://cur8t617e8ijb"]
+[gd_scene load_steps=10 format=3 uid="uid://cur8t617e8ijb"]
 
 [ext_resource type="Script" path="res://essence/essence.gd" id="1_377sv"]
-[ext_resource type="Texture2D" uid="uid://4aqhbn0cccnp" path="res://essence/red.png" id="2_fwse0"]
-[ext_resource type="Texture2D" uid="uid://b6hxy5mpk8p8j" path="res://essence/yellow.png" id="3_al6ko"]
-[ext_resource type="Texture2D" uid="uid://d37kqbu66pkxq" path="res://essence/green.png" id="4_7t1tn"]
-[ext_resource type="Texture2D" uid="uid://dwps5d0ymcmej" path="res://essence/brown.png" id="5_db48j"]
-[ext_resource type="Texture2D" uid="uid://c1qljmh26f0f" path="res://essence/black.png" id="6_ysjjx"]
-[ext_resource type="Texture2D" uid="uid://bk8tsn3kk2ffw" path="res://essence/white.png" id="7_2opq5"]
+[ext_resource type="Texture2D" uid="uid://c0jpx8ib64n6w" path="res://assets/spritesheet.png" id="2_iapfg"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2md1s"]
 radius = 16.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3wxq6"]
+atlas = ExtResource("2_iapfg")
+region = Rect2(128, 59, 5, 5)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x6qnc"]
+atlas = ExtResource("2_iapfg")
+region = Rect2(144, 59, 5, 5)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i7eda"]
+atlas = ExtResource("2_iapfg")
+region = Rect2(112, 59, 5, 5)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1g26m"]
+atlas = ExtResource("2_iapfg")
+region = Rect2(80, 59, 5, 5)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p75kn"]
+atlas = ExtResource("2_iapfg")
+region = Rect2(160, 59, 5, 5)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hdwfo"]
+atlas = ExtResource("2_iapfg")
+region = Rect2(96, 59, 5, 5)
 
 [node name="Essence" type="RigidBody2D" groups=["Essence"]]
 contact_monitor = true
@@ -23,37 +42,37 @@ shape = SubResource("CircleShape2D_2md1s")
 unique_name_in_owner = true
 visible = false
 scale = Vector2(6, 6)
-texture = ExtResource("2_fwse0")
+texture = SubResource("AtlasTexture_3wxq6")
 
 [node name="Aether" type="Sprite2D" parent="."]
 unique_name_in_owner = true
 visible = false
 scale = Vector2(6, 6)
-texture = ExtResource("3_al6ko")
+texture = SubResource("AtlasTexture_x6qnc")
 
 [node name="Aqua" type="Sprite2D" parent="."]
 unique_name_in_owner = true
 visible = false
 scale = Vector2(6, 6)
-texture = ExtResource("4_7t1tn")
+texture = SubResource("AtlasTexture_i7eda")
 
 [node name="Terra" type="Sprite2D" parent="."]
 unique_name_in_owner = true
 visible = false
 scale = Vector2(6, 6)
-texture = ExtResource("5_db48j")
+texture = SubResource("AtlasTexture_1g26m")
 
 [node name="Umbra" type="Sprite2D" parent="."]
 unique_name_in_owner = true
 visible = false
 scale = Vector2(6, 6)
-texture = ExtResource("6_ysjjx")
+texture = SubResource("AtlasTexture_p75kn")
 
 [node name="Ventus" type="Sprite2D" parent="."]
 unique_name_in_owner = true
 visible = false
 scale = Vector2(6, 6)
-texture = ExtResource("7_2opq5")
+texture = SubResource("AtlasTexture_hdwfo")
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0

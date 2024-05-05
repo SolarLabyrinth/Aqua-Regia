@@ -68,9 +68,9 @@ func on_impurity(midpoint):
 	add_child(newEssence)
 	modify_purity(-1)
 
-func create_essence(type, position):
+func create_essence(type, position2):
 	var newEssence = ESSENCE.instantiate()
-	newEssence.global_position = position 
+	newEssence.global_position = position2
 	newEssence.type = next_essence_type
 	return newEssence
 
@@ -83,15 +83,15 @@ func generate_essence_type():
 	last_i = i
 	return ['ignis','aether','aqua','terra','umbra','ventus'][i]
 
-func _on_clickable_area_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
+func _on_clickable_area_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
 	if event.is_action("spawn_essence", true) and event.is_pressed():
 		%PlopPlayer.play()
 		spawn_next_essence(event.position)
 
-func spawn_next_essence(position: Vector2):
+func spawn_next_essence(position2: Vector2):
 	if next_essence: next_essence.queue_free()
 	
-	var newEssence = create_essence(next_essence_type, position) 
+	var newEssence = create_essence(next_essence_type, position2) 
 	add_child(newEssence)
 	
 	next_essence_type = generate_essence_type() 
